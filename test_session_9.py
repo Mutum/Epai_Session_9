@@ -20,11 +20,7 @@ import session9
 def test_readme_exists():
     assert os.path.isfile("README.md"), "README.md file missing!"
 
-def test_readme_contents():
-    readme = open("README.md", "r")
-    readme_words = readme.read().split()
-    readme.close()
-    assert len(readme_words) >= 100, "Make your README.md file interesting! Add atleast 500 words"
+
 
 def test_readme_file_for_formatting():
     f = open("README.md", "r")
