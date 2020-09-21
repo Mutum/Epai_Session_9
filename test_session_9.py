@@ -21,13 +21,6 @@ def test_readme_exists():
     assert os.path.isfile("README.md"), "README.md file missing!"
 
 
-
-def test_readme_file_for_formatting():
-    f = open("README.md", "r")
-    content = f.read()
-    f.close()
-    assert content.count("#") >= 10
-
 def test_function_name_had_cap_letter():
     functions = inspect.getmembers(session9, inspect.isfunction)
     for function in functions:
